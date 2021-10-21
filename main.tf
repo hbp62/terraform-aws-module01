@@ -14,9 +14,7 @@ resource "aws_eip" "eip" {
   vpc      = true
 }
 
-output "eip" {
-  value = aws_eip.eip.address
-}
+
 
 
 
