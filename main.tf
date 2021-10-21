@@ -3,7 +3,7 @@ resource "aws_instance" "foo" {
   ami           = "ami-087c17d1fe0178315" # us-west-2
   instance_type = var.instance_type
   tags = {
-    "Name" = "demo01"#format("demo-%02d",(count.index + 1))
+    "Name" = var.name#format("demo-%02d",(count.index + 1))
     
   }
 
