@@ -9,3 +9,8 @@ variable "instance_count" {
 variable "name" {
   
 }
+
+variable "ami_id" {
+  
+  
+}
