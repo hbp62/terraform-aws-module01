@@ -8,3 +8,11 @@ variable "instance_type" {
 variable "name" {
   
 }
+
+variable "ingress_cidr_blocks" {
+  
+}
+
+variable "egress_cidr_blocks" {
+  
+}
