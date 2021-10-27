@@ -42,6 +42,15 @@ resource "aws_security_group" "testdemo" {
     Name = var.sgname
   }
 }
+
+variable "ingress_cidr_blocks" {
+  
+}
+
+variable "egress_cidr_blocks" {
+  
+}
+
 # resource "aws_eip" "eip" {
 #   instance = aws_instance.foo.id
 #   vpc      = true
