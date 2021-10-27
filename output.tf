@@ -5,9 +5,7 @@ variable "sgname" {
   
 }
 
-variable "sgname" {
-  
-}
+
 # output "eip" {
 #   value = aws_eip.eip.address
 # }
