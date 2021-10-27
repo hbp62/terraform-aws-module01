@@ -72,8 +72,6 @@ resource "aws_instance" "demo05" {
 
 }
 
-variable "name" {
-  
-}
+
 
 
