@@ -14,7 +14,7 @@ resource "aws_security_group" "testdemo" {
       from_port        = 443
       to_port          = 443
       protocol         = "tcp"
-      cidr_blocks      = [aws_vpc.test.cidr_block]
+      cidr_blocks      = [var.ingress_cidr_blocks]
       ipv6_cidr_blocks = ["::/0"]
       prefix_list_ids = []
       security_groups = []
@@ -28,7 +28,7 @@ resource "aws_security_group" "testdemo" {
       from_port        = 0
       to_port          = 0
       protocol         = "tcp"
-      cidr_blocks      = ["0.0.0.0/0"]
+      cidr_blocks      = [var.egress_cidr_blocks]
       ipv6_cidr_blocks = ["::/0"]
       prefix_list_ids = []
       security_groups = []
