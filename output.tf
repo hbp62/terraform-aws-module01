@@ -4,6 +4,10 @@ output "instance_name" {
 variable "sgname" {
   
 }
+
+variable "sgname" {
+  
+}
 # output "eip" {
 #   value = aws_eip.eip.address
 # }
