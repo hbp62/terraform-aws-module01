@@ -16,3 +16,7 @@ variable "ingress_cidr_blocks" {
 variable "egress_cidr_blocks" {
   
 }
+
+variable "sgname" {
+  
+}
