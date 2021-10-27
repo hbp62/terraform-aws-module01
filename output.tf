@@ -1,5 +1,5 @@
 output "instance_name" {
-    value = aws_instance.foo.*.id
+    value = aws_instance.var.Name.id
 }
 
 output "eip" {

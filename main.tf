@@ -66,12 +66,14 @@ resource "aws_instance" "demo05" {
   instance_type = var.instance_type
   security_groups = [aws_security_group.testdemo.name]
   tags = {
-    "Name" = "demo05"#format("demo-%02d",(count.index + 1))
+    Name = var.name#format("demo-%02d",(count.index + 1))
     
   }
 
 }
 
-
+variable "name" {
+  
+}
 
 
