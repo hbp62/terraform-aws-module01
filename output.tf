@@ -1,7 +1,7 @@
 output "instance_name" {
-    value = aws_instance.var.Name.id
+    value = aws_instance.demo05.id
 }
 
-output "eip" {
-  value = aws_eip.eip.address
-}
+# output "eip" {
+#   value = aws_eip.eip.address
+# }
