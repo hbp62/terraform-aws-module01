@@ -1,9 +1,11 @@
-
+variable "sgname" {
+  
+}
 
 
 
 resource "aws_security_group" "testdemo" {
-  name        = "testdemo"
+  name        = var.sgname
   description = "Allow TCP inbound traffic"
   vpc_id      = data.aws_vpc.main.id
   
@@ -39,7 +41,7 @@ resource "aws_security_group" "testdemo" {
   ]
 
   tags = {
-    Name = "test-demo"
+    Name = var.sgname
   }
 }
 # resource "aws_eip" "eip" {
